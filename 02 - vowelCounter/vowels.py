@@ -1,6 +1,6 @@
 # File        :   vowels.py
 # Version     :   1.0.0
-# Description :   Solution to the dontPanic problem
+# Description :   Solution to the vowel counting problem
 #
 # Date:       :   Jan 04, 2023
 # Author      :   Ricardo Acevedo-Avila (racevedoaa@gmail.com)
