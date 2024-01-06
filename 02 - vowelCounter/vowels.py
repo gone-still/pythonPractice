@@ -1,8 +1,8 @@
 # File        :   vowels.py
-# Version     :   1.0.1
+# Version     :   1.0.2
 # Description :   Solution to the vowel counting problem
 #
-# Date:       :   Jan 04, 2023
+# Date:       :   Jan 05, 2023
 # Author      :   Ricardo Acevedo-Avila (racevedoaa@gmail.com)
 # License     :   Creative Commons CC0
 
@@ -10,13 +10,20 @@
 # Write a program that count how many times each vowel appears in an
 # input word.
 
+def initDict(inputDict: dict, constantValues: tuple) -> None:
+    """Initializes the dict keys according to the
+    constant values in the tuple"""
+    # dict initialization:
+    for vowel in constantValues:
+        inputDict[vowel] = 0
+
+
 # List of vowels:
 vowels = ("a", "e", "i", "o", "u")
 
 # dict initialization:
 counter = {}
-for vowel in vowels:
-    counter[vowel] = 0
+initDict(counter, vowels)
 
 # input prompt:
 inputWord = input("Input word: ")
