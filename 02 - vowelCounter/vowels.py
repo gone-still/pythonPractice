@@ -1,5 +1,5 @@
 # File        :   vowels.py
-# Version     :   1.0.2
+# Version     :   1.0.3
 # Description :   Solution to the vowel counting problem
 #
 # Date:       :   Jan 05, 2023
@@ -18,7 +18,7 @@ def initDict(inputDict: dict, constantValues: tuple) -> None:
         inputDict[vowel] = 0
 
 
-# List of vowels:
+# tuple of vowels:
 vowels = ("a", "e", "i", "o", "u")
 
 # dict initialization:
