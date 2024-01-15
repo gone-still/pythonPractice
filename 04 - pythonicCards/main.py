@@ -1,8 +1,8 @@
 # File        :   pythonicCards.py
-# Version     :   1.0.0
+# Version     :   1.0.1
 # Description :   Checking out a pythonic card deck
 #
-# Date:       :   Jan 12, 2023
+# Date:       :   Jan 14, 2023
 # Author      :   Ricardo Acevedo-Avila (racevedoaa@gmail.com)
 # License     :   Creative Commons CC0
 
@@ -66,6 +66,11 @@ print(randomCard)
 # Get a "hand" of 5 cards:
 hand = deck[0:4]
 print(hand)
+
+# Get a random card object:
+oneCard = hand[random.randint(0, len(hand))]
+# Print attributes:
+print(oneCard.rank, oneCard.suit)
 
 # __getitem__ makes the sequence iterable,
 # iterate through the 5 cards and print em:
